@@ -1,7 +1,12 @@
+include templates/mixins
+
 <!DOCTYPE html>
-html(lang="en")
+html(lang="ru")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Document
+    title MartaUp
   body
+    .wrapper 
+      include templates/blocks/header
+      include templates/blocks/promo
