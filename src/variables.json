@@ -1,0 +1,11 @@
+{
+  "main": "#000",
+  "secondary": "#fff",
+  "btn": "#250F8A",
+  "speed": "0.3s",
+
+  "bp-desktop-hd": "1800px",
+  "bp-desktop": "1200px",
+  "bp-tablets": "768px",
+  "bp-phones": "480px"
+}
