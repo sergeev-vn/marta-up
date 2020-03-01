@@ -13,9 +13,9 @@ module.exports = (env, argv) => {
   const pcss = {
     test: /\.(p|post|)css$/,
     use: [
-      isProductionBuild
-        ? MiniCssExtractPlugin.loader
-        : "css-loader", "postcss-loader"
+      isProductionBuild ? MiniCssExtractPlugin.loader : "style-loader",
+      "css-loader",
+      "postcss-loader"
     ]
   };
 
@@ -48,12 +48,7 @@ module.exports = (env, argv) => {
         loader: "svgo-loader",
         options: {
           plugins: [
-            { removeTitle: true },
-            {
-              removeAttrs: {
-                attrs: "(fill|stroke)"
-              }
-            }
+            { removeTitle: true }
           ]
         }
       }
@@ -89,7 +84,7 @@ module.exports = (env, argv) => {
       overlay: true
     },
     performance: {
-      hints: true
+      hints: false
     },
     plugins: [
       new HtmlWebpackPlugin({
