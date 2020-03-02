@@ -5,3 +5,5 @@ if (process.env.NODE_ENV === "development") {
 }
 
 import "jquery";
+import "slick-carousel";
+import "./scripts/slider";
