@@ -1,3 +1,16 @@
 section.promo
-  .container
+  .container.promo__container
     .promo__content
+      ul.slider
+        li.slider__item
+          .slider__content
+            .slider__left
+              h3.slider__title
+                | We Build Apps & Websites for Your Business
+              .slider__subtitle
+                | For startups, For businesses & For you
+              .slider__button
+                button(type='button').btn.btn_color-yellow.btn_color-yellow Request a quote
+            .slider__right
+              .slider__image
+                +icon('slider-img-1', 'slider__img')
