@@ -37,3 +37,28 @@
 .slider__img {
   width: 100%;
 }
+
+.slider-dots {
+  list-style: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.slider-dots button {
+  background-color: $secondary;
+  opacity: 0.5;
+  font-size: 0;
+  padding: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 3.5px;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  margin: 10px auto;
+}
+.slider-dots .slick-active button {
+  width: 15px;
+  opacity: 1;
+}
