@@ -91,7 +91,11 @@ module.exports = (env, argv) => {
         template: "src/index.pug",
         chunks: ["main"]
       }),
-      new SpriteLoaderPlugin({ plainSprite: true })
+      new SpriteLoaderPlugin({ plainSprite: true }),
+      new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery"
+    })
     ],
     devtool: "#eval-source-map"
   };
