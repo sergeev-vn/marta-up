@@ -1,6 +1,7 @@
 {
-  "main": "#000",
+  "main": "#272727;",
   "secondary": "#fff",
+  "main-title": "#202020;",
   "btn": "#250F8A",
   "btn-yelllow": "#FFCA00",
   "speed": "0.3s",
