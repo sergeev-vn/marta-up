@@ -3,6 +3,7 @@
   background-image: svg-load(specialised-bg.svg);
   background-repeat: no-repeat;
   background-position: left bottom;
+  text-align: center;
 }
 
 .specialised__title {
@@ -11,15 +12,29 @@
 
 .specialised__list {
   display: flex;
+  justify-content: space-between;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.specialised__item {
+  width: 280px;
+}
+
+.specialised__item-image {
+  min-height: 159px;
+  margin-bottom: 23px;
 }
 
 .specialised__item-title {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
+  margin-bottom: 11px;
 }
 
 .specialised__item-text {
+  padding: 0 10px;
   font-size: 15px;
   line-height: 24px;
   opacity: 0.7;
