@@ -1,14 +1,27 @@
 .advantage {
   display: flex;
   justify-content: space-between;
+
+  &_right {
+    .advantage__info {
+      order: 1;
+      background-image: svg-load(advantage-title-bg-2.svg);
+      background-position:  29px 145px;
+    }
+  }
 }
 
 .advantage__info {
-  max-width: 455px;
+  max-width: 460px;
   padding: 129px 0 0 52px;
   background-image: svg-load(advantage-title-bg-1.svg);
   background-repeat: no-repeat;
   background-position:  25px 85px;
+
+  &_bg {
+    background-image: svg-load(advantage-title-bg-3.svg);
+    background-position:  14px 119px;
+  }
 }
 
 .advantage__title {
@@ -17,7 +30,7 @@
   line-height: 1.29;
   color: $main-title;
   max-width: 382px;
-  padding-bottom: 26px;
+  padding-bottom: 22px;
 }
 
 .advantage__text {
