@@ -11,6 +11,10 @@
   font-weight: bold;
   font-size: 45px;
   line-height: 1.33;
+
+  @include phones {
+    font-size: 35px;
+  }
 }
 
 .slider__subtitle {
@@ -20,11 +24,30 @@
 
 .slider__button {
   margin-top: 70px;
+
+  @include desktop {
+    margin-top: 50px;
+  }
+
+  @include mini-desktop {
+    margin-top: 30px;
+  }
+}
+
+.slider__item {
+  padding-bottom: 40px;
 }
 
 .slider__left {
   max-width: 505px;
+  min-width: 360px;
   color: $secondary;
+
+  @include mini-desktop {
+    max-width: 100%;
+    min-width: 100%;
+    padding-right: 30px;
+  }
 }
 
 .slider__right {
@@ -32,6 +55,11 @@
   max-width: 516px;
   min-width: 205px;
   width: 100%;
+  margin-left: 5%;
+
+  @include mini-desktop {
+    display: none;
+  }
 }
 
 .slider__img {
@@ -43,6 +71,10 @@
   position: absolute;
   right: 0;
   top: 50%;
+
+  @include mini-desktop {
+    transform: translateY(-50%);
+  }
 }
 
 .slider-dots button {
