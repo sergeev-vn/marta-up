@@ -8,7 +8,11 @@
   "speed": "0.3s",
 
   "bp-desktop-hd": "1800px",
+  "bp-desktop-sd": "1470px",
   "bp-desktop": "1200px",
+  "bp-desktop-middle": "1050px",
+  "bp-mini-desktop": "940px",
   "bp-tablets": "768px",
+  "bp-phones-big": "630px",
   "bp-phones": "480px"
 }
