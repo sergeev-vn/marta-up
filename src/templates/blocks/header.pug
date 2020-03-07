@@ -7,11 +7,19 @@ header.header
         .logo__text MartaUP
     .header__menu
       nav.menu
-        - var menu = [{ title: 'home', url: '#' }, { title: 'work', url: '#' }, { title: 'about', url: '#' }, { title: 'contact', url: '#' }];
+        button(type='button').menu__btn
+          span.menu__btn-row
+        - var menu = [{ title: 'Главная', url: '#' }, { title: 'Работа', url: '#' }, { title: 'О нас', url: '#' }, { title: 'Контакты', url: '#' }];
         ul.menu__list
           each item in menu
             li.menu__item
               a.menu__link(href=item.url) #{item.title}
     .header__buttons
-      button.btn-text.btn-text_margin(type='button') Login
-      button.btn(type='button') Sign Up
+      button.btn-text.btn-text_margin(type='button') войти
+      button.btn(type='button') Регистрация
+    .header__sidebar
+      .sidebar
+        ul.menu__list
+          each item in menu
+            li.menu__item
+              a.menu__link(href=item.url) #{item.title}
