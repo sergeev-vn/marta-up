@@ -3,12 +3,31 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 35px;
+
+  @include tablets {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+
+.footer__links {
+  @include tablets {
+    margin-bottom: 10px;
+  }
+
+  @include tablets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .footer__link {
-  margin-right: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
 
-  &:last-child {
-    margin-right: 0;
+  @include tablets {
+    white-space: nowrap;
   }
 }
