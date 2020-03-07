@@ -1,17 +1,23 @@
 button.btn {
   color: $btn;
   font-weight: 600;
-  padding: 8px 44px;
+  padding: 8px 30px;
   text-align: center;
   text-transform: uppercase;
   background-color: $secondary;
   border-radius: 20px;
   white-space: nowrap;
+  transition: .1s;
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
 
   &_color-yellow {
     background-color: $btn-yelllow;
     border-radius: 25px;
     padding: 13px 39px;
+    transition: .1s ;
   }
 }
 
@@ -27,7 +33,7 @@ button.btn {
   }
 
   &_margin {
-    margin-right: 40px;
+    margin-right: 10%;
 
     @include mini-desktop {
       margin-right: 20px;
