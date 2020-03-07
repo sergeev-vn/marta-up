@@ -4,10 +4,23 @@
   background-repeat: no-repeat;
   background-position: left bottom;
   text-align: center;
+
+  @include desktopSd {
+    background-size: 80px;
+    background-position: 0 85%;
+  }
+
+  @include desktop {
+    background-image: none;
+  }
 }
 
 .specialised__title {
   margin-bottom: 96px;
+
+  @include tablets {
+    margin-bottom: 60px;
+  }
 }
 
 .specialised__list {
@@ -15,15 +28,38 @@
   justify-content: space-between;
   max-width: 980px;
   margin: 0 auto;
+
+  @include big-phones {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .specialised__item {
   width: 280px;
+
+  @include big-phones {
+    margin-bottom: 50px;
+    width: 48%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include phones {
+    width: 100%;
+  }
+
 }
 
 .specialised__item-image {
   min-height: 159px;
   margin-bottom: 23px;
+  
+  @include phones {
+    margin-bottom: 0;
+  }
 }
 
 .specialised__item-title {
